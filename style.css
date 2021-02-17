@@ -1,0 +1,48 @@
+/* FONT */
+body, html {
+  margin: 0; padding: 0;  
+}
+
+h2, h3, p {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 30px;
+}
+
+h3, p, a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.correctAns {
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.flex, .column, .row {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+
+
