@@ -1,0 +1,49 @@
+/* ====================================================================
+~ this css file is for layout, spacings and text ~
+not complete! will be adjusted according to how everyones code is
+=======================================================================*/
+
+body {
+    margin: 0;
+    justify-content: center;
+    background-color: black; /* could be a different bg color if we wanted */
+}
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+}
+.flex-row > p {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 170px;
+}
+.main {
+    box-sizing: border-box;
+    background-color: lightblue;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 375px;
+    max-width: 375px;
+    padding: 25px;
+    background-image: linear-gradient( /* not sure how this would look on the full infographic, add more if needed */
+        #CCE6F4, #fcdb58, #A6C48A,
+        #CCE6F4, #fcdb58, #A6C48A, 
+        #CCE6F4)
+}
+h1 {
+    text-align: center;
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 400;
+}
+p, .bolded { /* ".bolded" is what i used on text that should be bigger but in montserrat */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.spacingMargin {
+    margin: 50px 0 50px 0;
+}
