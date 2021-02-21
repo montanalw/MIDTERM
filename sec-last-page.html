@@ -2,13 +2,161 @@
 <html lang="en">
     <head>
         <meta  charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
         <title></title>
-        <script>
+        <style>
+            body {
+                margin: 0;
+                justify-content: center;
+                background-color: black;
+            }
+            .flex {
+                display: flex;
+            }
+            .flex-row {
+                flex-direction: row;
+            }
+            .flex-row > p {
+                display: flex;
+                align-items: center;
+                text-align: left;
+                margin-left: 20px;
+                margin-right: 20px;
+                width: 170px;
+            }
+            .main {
+                box-sizing: border-box;
+                background-color: lightblue;
+                flex-direction: column;
+                justify-content: center;
+                min-width: 375px;
+                max-width: 375px;
+                padding: 25px;
+            }
+            h1 {
+                text-align: center;
+                font-family: 'Lexend Giga', sans-serif;
+                font-weight: 400;
+            }
+            p, h2 {
+                text-align: center;
+                font-family: 'Montserrat', sans-serif;
+            }
+            .spacingMargin {
+                margin: 50px 0 50px 0;
+            }
 
-        </script>
+            /* sad girl section (clickable) */
+            .hidden {
+                visibility: hidden;
+            }
+            #text1 {
+                text-align: left;
+                left: 10px;
+                top: 10px;
+            }
+            #text2 {
+                left: 30px;
+                top: 175px;
+            }
+            #text3 {
+                text-align: right;
+                right: 0;
+                top: 50px;
+            }
+            #sadGirlSection {
+                position: relative;
+            }
+            #sadGirlSection > div > p {
+                position: absolute;
+                color: #951F1E;
+            }
+            .thinkBubble {
+                position: absolute;
+                top: 0;
+            }
+            .sadGirl {
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
     </head>
-    <body>
+    <body class="flex">
+        <div class="main flex">
+            <div>
+                <p>Fast fashion spreads a message that if you wear clothes that are out of season, 
+                    it means you're our of style.</p>
 
+                <div id="sadGirlSection" class="spacingMargin">
+                    <div class="flex flex-row">
+                        <img class="thinkBubble" id="thinking" class="alignTopImg" src="thinking-bubble.svg" alt="thinking bubble">
+                        <img class="sadGirl" src="sad-girl.svg" alt="sad girl">
+                    </div>
+                    <div class="hidden" id="hide">
+                        <p id="text1">"that shirt<br> is so last <br>month"</p>
+                        <p id="text2">"eww"</p>
+                        <p id="text3">"when was <br>the last time <br>you bought <br>something <br>new?"</p>
+                    </div>
+                </div>
+                <p>This encourages people to shop at fast fashion stores to buy the most up to date clothes,
+                    and to discard their older items.</p>
+            </div>
+
+
+            <script> //TRANSFER TO A JS FILE
+                function thinkingClicked()
+                {
+                    let thinking = document.getElementById("thinking")
+                    let appear = document.getElementById("hide")
+                    
+                    thinking.onclick=function()
+                    {
+                            thinking.style.display = "none";
+                            appear.style.visibility = "visible";
+                    }
+                }
+                window.onload = thinkingClicked
+            </script>
+
+
+            <h1>NEW SECTION, COPY PASTE TO ATTACH SOMEWHERE</h1>
+
+
+
+            <img src="water-droplets.svg" alt="water droplets from big to small">
+            <h2><b>20,000L of Water</b></h2>
+            <p>is used to create <b>one</b> pair of jeans</p>
+            <div class="flex flex-row spacingMargin">
+                <img src="jeans.svg" alt="jeans with text saying approx. 450 million">
+                <p>jeans are sold in the US per year</p>
+            </div>
+            <p>thats</p>
+            <div class="spacingMargin">
+                <img src="jeans-water.svg" alt="image of hands holding water with text saying 9 trilliion">
+                <h2><b>litres of water per year!</b></h2>
+            </div>
+
+            <h1>synthetic fabrics & chemicals in cheap dyes</h1>
+            <div class="flex flex-row spacingMargin">
+                <img src="red-shirt.svg" alt="t-shirt with 64% on it">
+                <p>of all fabrics are made of plastic</p>
+            </div>
+            <div class="flex flex-row spacingMargin">
+                <p>Just washing a batch of clothes can create 17 million microfibres</p>
+                <img src="water-drop.svg" alt="t-shirt with 64% on it">
+            </div>
+            <div class="flex flex-row spacingMargin">
+                <img src="fish.svg" alt="fish">
+                <p>Microfibres can be found in the air, rivers, drinking water, and the ocean</p>
+            </div>
+            <div class="flex flex-row spacingMargin">
+                <p>Cheaper price/quality dyes contain many different harsh toxins</p>
+                <img src="toxin.svg" alt="a toxic bottle">
+            </div>
+
+        </div>
 
         
     </body>
