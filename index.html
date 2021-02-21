@@ -10,22 +10,10 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
 
-        <script>
-            window.onload = function {
-
-                let li = document.getElementsByTagName("li")
-                
-                for(i=0; i<li.length; i++){
-                    li.onclick = function { 
-                        
-                    }
-                }
-
-
-
-            }
-
-        </script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
+        <script src="main.js"></script>
     </head>
 
     <body>
@@ -39,39 +27,31 @@
                 </div>
 
                 <div class ="row flex options">
-                    <ul>
-                        <li class="wrong">
-                            <a href="#wrongAns1" target="_self">
-                                20L
-                            </a>
+                    <ul id="water_options">
+                        <li>
+                            20L
                         </li>
-                        <li class="wrong">
-                            <a href="#wrongAns1" target="_self">
-                                200L
-                            </a>
+                        <li>
+                            200L
                         </li> 
-                        <li class="correct">
-                            <a href="#wrongAns1" target="_self">
-                                2,000L 
-                            </a>                                                         
+                        <li>
+                            2,000L  
                         </li>
-                        <li class="wrong">
-                            <a href="#" target="_self">
-                                20,000L
-                            </a>
+                        <li>
+                            20,000L
                         </li>
                     </ul>
                 </div>
 
-                <div class="correctAns off">Correct!</div>
+                <div id="correctAns1" class="correctAns off off1">Correct!</div>
             </section> <!--water consumption question-->
 
-            <section class="wrongAns off column" name="wrongAns1">
+            <section id="wrongAns1" class="wrongAns off column" name="wrongAns1">
                 <h2 class="oops">Oops!<br>Wrong Answer,<br>Please Try Again!</h2>
-                <a class="sad_girl" href=".waterQues" target="_self">
-                    <img src="images/info_girl_sad.svg" alt="wrong answer"/>
+                <div class="sad_girl">
+                    <img id="sad1" src="images/info_girl_sad.svg" alt="wrong answer"/>
                     <p class="click_me">Click me to try again!</p>
-                </a>
+                </div>
             </section> <!--wrong answer-->
 
             <section class="question decompQues column flex">
@@ -82,40 +62,32 @@
                 </div>
 
                 <div class ="row flex options">
-                    <ul>
-                        <li class="wrong">
-                            <a href="#wrongAns2" target="_self">
-                                ~50 Years
-                            </a>
+                    <ul id="decom_options">
+                        <li>
+                            ~50 Years
                         </li>
-                        <li class="wrong">
-                            <a href="#wrongAns2" target="_self">
-                                ~100 Years
-                            </a>
+                        <li>
+                            ~100 Years
                         </li> 
-                        <li class="correct">
-                            <a href="#" target="_self">
-                                ~200 Years  
-                            </a>                                                         
+                        <li>
+                            ~200 Years 
+                                                     
                         </li>
-
-                        <li class="wrong">
-                            <a href="#wrongAns2" target="_self">
-                                ~500 Years
-                            </a>
+                        <li>
+                            ~500 Years
                         </li>
                     </ul>
                 </div>
 
-                <div class="correctAns off">Correct!</div>
+                <div id="correctAns2" class="correctAns off">Correct!</div>
             </section> <!--water consumption question-->
             
-            <section class="wrongAns off column" name="wrongAns2">
+            <section id="wrongAns2" class="wrongAns off column" name="wrongAns2">
                 <h2 class="oops">Oops!<br>Wrong Answer,<br>Please Try Again!</h2>
-                <a class="sad_girl" href=".decompQues" target="_self">
-                    <img src="images/info_girl_sad.svg" alt="wrong answer"/>
+                <div>
+                    <img id="sad2" src="images/info_girl_sad.svg" alt="wrong answer"/>
                     <p class="click_me">Click me to try again!</p>
-                </a>
+                </div>
             </section> <!--wrong answer-->
 
         </div>
