@@ -1,0 +1,87 @@
+html, body{
+    min-width: 375px;
+    max-width: 375px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 16px;   
+    background-color: rgb(200, 230, 180);
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    font-family:'Montserrat', sans-serif ;
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:large
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    margin:35px 0px;
+}
+.item1{
+    text-align: right;
+}
+
+.item{
+    padding-left: 0px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.boldText1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.boldText2{
+    font-weight:bolder;
+    font-size:21px;
+}
+
+#world{
+    margin: 100px 0px;
+    position: relative;
+}
+
+#globeImage{
+    position: relative;
+}
+
+#arrowImage{
+    position: absolute;
+    left:-50px;
+}
+
+#lightbulb{
+    width: 90px;
+}
+
+.icon{
+    width: 60px;
+}
+
+#reVamp{
+   margin-right: 130px;
+}
