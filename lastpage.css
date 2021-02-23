@@ -12,6 +12,7 @@ html, body{
     box-sizing: border-box;
     padding: 16px;   
     background-color: rgb(200, 230, 180);
+    position: relative;
 }
 
 h1, h2{
@@ -60,18 +61,21 @@ p {
     font-size:21px;
 }
 
-#world{
-    margin: 100px 0px;
+.world{
+    margin-bottom: 140px;
     position: relative;
 }
 
-#globeImage{
+.globeImage{
     position: relative;
+    z-index: 2;
+    animation: rotation 15s infinite linear;
 }
 
-#arrowImage{
-    position: absolute;
-    left:-50px;
+.arrowImage{
+    position: relative;
+    top: 260px;
+    z-index: 1;
 }
 
 #lightbulb{
@@ -84,4 +88,32 @@ p {
 
 #reVamp{
    margin-right: 130px;
+}
+
+.spacing{
+    margin-top: 80px;
+    margin-bottom: -20px;
+}
+.spacing2{
+    margin-top: 80px;
+    margin-bottom: -175px;
+}
+.spacing3{
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+.spacing4{
+    margin-bottom: 50px;
+}
+.spacing5{
+    margin-bottom: 130px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
 }
