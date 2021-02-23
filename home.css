@@ -165,12 +165,6 @@ p {
     font-weight: 600;
 }
 
-#re-n-re {
-    align-items: center;
-    justify-content: center;
-    text-align: center
-}
-
-#or {
-    margin: 10%;
+#or-text {
+    flex-direction: column;
 }
