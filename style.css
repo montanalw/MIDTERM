@@ -120,52 +120,6 @@ a:active {
   padding: 0;
 }
 
-/* .options ul li {
-  width: 46%;
-  height: 4rem;
-  margin-right: 8%;  
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.25);
-  text-align: center;
-  line-height: 4rem;  
-  background-color: #fff;
-} */
-
-/* .options ul li:nth-child(2n){
-  margin-right: 0;
-}
-
-.options ul li:first-child{
-  margin-bottom: 8%;
-}
-
-.options ul li:nth-child(2){
-  margin-bottom: 8%;
-} */
-
-/* .wrongAns {
-  padding-top: 50px;
-  box-sizing: border-box;
-} */
-
-/* .oops {
-  margin-bottom: 68px;
-  font-weight: 300;
-} */
-
-/* .sad_girl {
-  width:100%;
-  height: 100%;  
-  margin-bottom: 68px;
-}
-
-.click_me {
-  width: 180px;  
-  margin: 0 auto;
-  margin-bottom: 145px;
-  margin-top: 40px;
-} */
-
 /* INDIVIDUAL STYLE */
 .waterQues, .decompQues {
   position: relative;
