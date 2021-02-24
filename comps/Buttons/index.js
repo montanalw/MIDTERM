@@ -8,7 +8,7 @@ function ButtonUI(mbottom="8%", mright="8%", text="20L", function1='ButtonUI.Han
     box-shadow: 5px 5px 5px -1px rgba(0,0,0,0.25);
     text-align: center;
     line-height: 4rem;
-    background-color: #fff;
+    background-color: #ffffff;
     margin-bottom: ${mbottom};
     margin-right: ${mright}; 
     '
@@ -20,7 +20,10 @@ function ButtonUI(mbottom="8%", mright="8%", text="20L", function1='ButtonUI.Han
 ButtonUI.HandleClickWrong1 = (el) => {
   $("#correctAns1").hide()
   $("#wrongAns1").show()
-  el.style.backgroundColor = "#fff"
+  let li = document.querySelector("#water_options").children
+  for(let i=0; i<li.length; i++) {
+    li[i].style.backgroundColor = "#fff"
+  }
 }
 
 ButtonUI.HandleClickRight1 = (el) => {
@@ -32,7 +35,11 @@ ButtonUI.HandleClickRight1 = (el) => {
 ButtonUI.HandleClickWrong2 = (el) => {
   $("#correctAns2").hide()
   $("#wrongAns2").show()
-  el.style.backgroundColor = "#fff"
+
+  let li = document.querySelector("#decom_options").children
+  for(let i=0; i<li.length; i++) {
+    li[i].style.backgroundColor = "#fff"
+  }
 }
 
 ButtonUI.HandleClickRight2 = (el) => {
