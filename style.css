@@ -57,10 +57,6 @@ a:active {
   color: #102C37;
 }
 
-section {
-  width: 100%;
-}
-
 .correctAns {
   font-size: 4rem;
   font-weight: bold;
@@ -124,7 +120,7 @@ section {
   padding: 0;
 }
 
-.options ul li {
+/* .options ul li {
   width: 46%;
   height: 4rem;
   margin-right: 8%;  
@@ -133,9 +129,9 @@ section {
   text-align: center;
   line-height: 4rem;  
   background-color: #fff;
-}
+} */
 
-.options ul li:nth-child(2n){
+/* .options ul li:nth-child(2n){
   margin-right: 0;
 }
 
@@ -145,18 +141,19 @@ section {
 
 .options ul li:nth-child(2){
   margin-bottom: 8%;
-}
+} */
 
-.wrongAns {
-  margin-top: 80px;
-}
+/* .wrongAns {
+  padding-top: 50px;
+  box-sizing: border-box;
+} */
 
-.oops {
+/* .oops {
   margin-bottom: 68px;
   font-weight: 300;
-}
+} */
 
-.sad_girl {
+/* .sad_girl {
   width:100%;
   height: 100%;  
   margin-bottom: 68px;
@@ -167,30 +164,27 @@ section {
   margin: 0 auto;
   margin-bottom: 145px;
   margin-top: 40px;
-}
+} */
 
 /* INDIVIDUAL STYLE */
-.waterQues {
+.waterQues, .decompQues {
   position: relative;
   top: 0; left: 0;
 }
 
-#wrongAns1 {
+#wrongAns1, #wrongAns2 {
   position: absolute;
   top: 0; left: 0;
   background-color: lightblue;
 }
 
-.decompQues {
-  position: relative;
-  top: 0; left: 0;
+#wrongAns1 > h2 {
+  font-weight: 300;
 }
 
-#wrongAns2 {
-  margin-top: 50px;
-  position: absolute;
-  top: 0; left: 0;
-  background-color: lightblue;
+
+#wrongAns2 > h2 {
+  font-weight: 300;
 }
 
 #correctAns1, #correctAns2 {
