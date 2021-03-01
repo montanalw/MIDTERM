@@ -66,6 +66,10 @@ p, .bolded {
     margin: 25px 0 25px 0;
 }
 
+.biggerSpacing {
+    margin: 50px 0 50px 0;
+}
+
 .greyText {
     color: #50514F;
 }
@@ -74,8 +78,9 @@ h2 {
     font-family: 'Lexend Giga', sans-serif;
     font-size: 1.875rem;
   }
-  h3, li {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
+
+h3, li {
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-weight: bolder;
 }
