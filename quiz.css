@@ -181,6 +181,7 @@ a:active {
 .waterQues {
   position: relative;
   top: 0; left: 0;
+  margin-bottom: 80px;
 }
 
 #wrongAns1 {
@@ -193,6 +194,7 @@ a:active {
 .decompQues {
   position: relative;
   top: 0; left: 0;
+  margin-bottom: 80px;
 }
 
 #wrongAns2 {

@@ -8,30 +8,6 @@ body {
     justify-content: center;
     background-color: black; /* could be a different bg color if we wanted */
 }
-.flex {
-    display: flex;
-}
-.flex-row {
-    flex-direction: row;
-    justify-content: center;
-}
-.flex-column {
-    flex-direction: column;
-}
-.flex-row > p { /* for text that align to left */
-    display: flex;
-    align-items: center;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    width: 170px;
-}
-
-.alignRight { /* for text that align to right */
-    text-align: right;
-    margin-left: 20px;
-}
-
 .main {
     box-sizing: border-box;
     background-color: lightblue;
@@ -45,23 +21,65 @@ body {
         #CCE6F4, #fcdb58, #A6C48A, 
         #CCE6F4)
 }
+
+/* ====================================================
+    flex stuff
+==================================================== */
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+    justify-content: center;
+}
+.flex-column {
+    flex-direction: column;
+}
+
+/* =====================================================
+    text content
+===================================================== */
+.flex-row > p { /* for text that align to left */
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 170px;
+}
+.alignRight { /* for text that align to right */
+    text-align: right;
+    margin-left: 20px;
+}
 h1 {
     text-align: center;
     font-family: 'Lexend Giga', sans-serif;
     font-weight: 400;
 }
-
+h2 {
+    font-family: 'Lexend Giga', sans-serif;
+    font-size: 1.875rem;
+}
+h3, li, div {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
 h2, h3 {
     text-align: center;
-
 }
-
 p, .bolded {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 }
+.greyText {
+    color: #50514F;
+}
 
+/* =======================================================
+    spacings/margins
+======================================================= */
 .spacingMargin {
     margin: 25px 0 25px 0;
 }
@@ -69,18 +87,7 @@ p, .bolded {
 .biggerSpacing {
     margin: 50px 0 50px 0;
 }
-
-.greyText {
-    color: #50514F;
-}
-
-h2 {
-    font-family: 'Lexend Giga', sans-serif;
-    font-size: 1.875rem;
-  }
-
-h3, li {
-text-align: center;
-font-family: 'Montserrat', sans-serif;
-font-weight: bolder;
+.headerMargin {
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
