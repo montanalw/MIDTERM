@@ -1,45 +1,26 @@
-html, body{
-    min-width: 375px;
-    max-width: 375px;
+.equalSign { /* so that the equal sign is centered vertically between the two images */
+    margin-top: 55px;
 }
 
-#main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 16px;   
-    background-color: rgb(200, 230, 180);
+.equalSection { /* just for some more white space */
+    margin-bottom: 25px;
 }
 
-h1, h2{
-    text-align: center;
-    font-family: 'Lexend Giga', sans-serif;
-    font-weight: 400;
-  
-}
-p {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
+.lastDiv {
+    margin-top: 30px;
 }
 
-
-
-.flex-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;   
+.spaceAround { /* to create an even space between the images and equal sign */
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
 }
 
-.item{
-    padding-left: 20px;
-    padding-right: 20px;
+#toLeft { /*specifically for the first equal sign, to make it look centered on the page*/
+    position: relative;
+    left: -20px;
 }
 
-.lastDiv > .item{
-    text-align: left;
-    padding-right: 0px;
+#toRight { /* specifically for the red shirt, because it was too close to the equal sign */
+    position: relative;
+    left: -20px;
 }

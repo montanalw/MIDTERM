@@ -45,7 +45,7 @@ body {
         #CCE6F4, #fcdb58, #A6C48A, 
         #CCE6F4)
 }
-h1 {
+h1, h2 {
     text-align: center;
     font-family: 'Lexend Giga', sans-serif;
     font-weight: 400;
@@ -56,4 +56,8 @@ p, .bolded { /* ".bolded" is what i used on text that should be bigger but in mo
 }
 .spacingMargin {
     margin: 50px 0 50px 0;
+}
+
+.greyText {
+    color: #50514F;
 }
