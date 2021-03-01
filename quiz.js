@@ -7,6 +7,7 @@ window.onload = function() {
 
   // irene's js:
   var quizPanel1 = document.getElementById("jeansQuestion")
+  var quizPanel2 = document.getElementById("decompQuestion")
 
 
   function question1() {
@@ -41,14 +42,16 @@ window.onload = function() {
         li[i].onclick = function() {
           $("#correctAns2").hide()
           $("#wrongAns2").show()
-          li[2].style.backgroundColor = "#fff"             
+          li[2].style.backgroundColor = "#fff"   
+          quizPanel2.style.visibility = "hidden";   //irenes js           
         }
       }       
       else{
         li[i].onclick = function() {
           $("#correctAns2").show()
           $("#wrongAns2").hide()
-          li[2].style.backgroundColor = "#D7F040"   
+          li[2].style.backgroundColor = "#D7F040"  
+          quizPanel2.style.visibility = "visible";   //irenes js  
         }
       } 
     }
@@ -66,6 +69,7 @@ window.onload = function() {
     let girl = document.querySelector("#sad2")
     girl.onclick = function() { 
       $("#wrongAns2").hide()
+      quizPanel2.style.visibility = "visible";   //irenes js 
     }
   }
 
