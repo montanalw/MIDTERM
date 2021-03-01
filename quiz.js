@@ -5,6 +5,9 @@ window.onload = function() {
   $("#wrongAns2").hide()
   $("#correctAns2").hide()
 
+  // irene's js:
+  var quizPanel1 = document.getElementById("jeansQuestion")
+
 
   function question1() {
     let li = $("#water_options").children()
@@ -14,7 +17,8 @@ window.onload = function() {
         li[i].onclick = function() {
           $("#correctAns1").hide()
           $("#wrongAns1").show()
-          li[3].style.backgroundColor = "#fff"             
+          li[3].style.backgroundColor = "#fff"   
+          quizPanel1.style.display = "none";   //irenes js 
         }
       } 
       else{
@@ -22,6 +26,7 @@ window.onload = function() {
           $("#correctAns1").show()
           $("#wrongAns1").hide()
           li[3].style.backgroundColor = "#D7F040"   
+          quizPanel1.style.display = "block";   //irenes js
         }
       }
     }
@@ -53,6 +58,7 @@ window.onload = function() {
     let girl = document.querySelector("#sad1")
     girl.onclick = function() {      
       $("#wrongAns1").hide()  
+      quizPanel1.style.display = "block";   //irenes js   
     }
   }
 

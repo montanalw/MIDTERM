@@ -13,10 +13,19 @@
 
         <link href="frame3.css" rel="stylesheet"> 
 
+        <link rel="stylesheet" href="quiz.css" type="text/css">
+        <script src="quiz.js"></script>
+
+
+
         
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     </head>
 </html>
 <body class="flex">
@@ -119,10 +128,10 @@
         <div class="equalSection">
             <p>The amount of water <br>used to make a cotton <br> t-shirt:</p>
             <div class="flex flex-row spaceAround">
-                <img id="toRight" src="images/redshirt.svg">
-                <h2 class="equalSign" id="toLeft">=</h2>
+                <img id="toRight" src="c-images/redshirt.svg">
+                <h1 class="equalSign" id="toLeft">=</h1>
                 <div class="flex flex-column">
-                    <img src="images/waterdroplet.svg">
+                    <img src="c-images/waterdroplet.svg">
                     <p class="greyText"><b>2,700L <br>of water</b></p>
                 </div>
             </div>
@@ -131,24 +140,53 @@
             <p>The average amount of <br>water a person needs a <br>day:</p>
             <div class="flex flex-row spaceAround">
                 <div class="flex flex-column">
-                    <img src="images/waterdroplet.svg">
+                    <img src="c-images/waterdroplet.svg">
                     <p class="greyText"><b>3L <br>of water</b></p>
                 </div>
-                <h2 class="equalSign">=</h2>
-                <img src="images/girl-smile.svg">
+                <h1 class="equalSign">=</h1>
+                <img src="c-images/girl-smile.svg">
             </div>
             <h2>therefore...</h2>
             <div class="flex flex-row lastDiv">
                 <p>The amount of <br>water used on <br>a cotton t-shirt <br>can help save 
                     many lives.</p>
-                <img src="images/group of girls.svg">
+                <img src="c-images/group of girls.svg">
             </div>
         </div>
 <!-- =============================================
                 section d: quiz 1 - jeans
 ==================================================-->
+        <div class="waterQues">
+            <section class="question flex-column flex" id="jeansQuestion">
+                <h3 class="qHead qHeadW">How much water is needed to make this pair of jeans?</h3>
+                <div class="q_img">
+                    <img class="quizImg" src="d-images/icon_jeans.svg" alt="jeans">
+                </div>
 
+                <div class ="flex-row flex options">
+                    <ul id="water_options">
+                        <li>20L</li>
+                        <li>200L</li> 
+                        <li>2,000L</li>
+                        <li>20,000L</li>
+                    </ul>
+                </div>
 
+                <div id="correctAns1" class="correctAns off off1">Correct!</div>
+            </section> <!--water consumption question-->
+
+            <section id="wrongAns1" class="wrongAns column">
+                <h2 class="oops">Oops!<br>Wrong Answer,<br>Please Try Again!</h2>
+                <div class="sad_girl">
+                    <img id="sad1" src="d-images/info_girl_sad.svg" alt="wrong answer"/>
+                    <p class="click_me">Click me to try again!</p>
+                </div>
+            </section> <!--wrong answer-->
+        </div>
+<!-- =============================================
+                section e: quiz 1 - jeans
+==================================================-->
+        
 
 
 

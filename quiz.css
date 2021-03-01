@@ -1,11 +1,10 @@
 /* FONT */
-body, html {
+/* body, html {
   margin: 0; padding: 0;
   justify-content: center;
-  /* background-color: black; */
-}
+} */
 
-.main {
+/* .main {
   box-sizing: border-box;
   background-color: lightblue;
   flex-direction: column;
@@ -14,7 +13,7 @@ body, html {
   max-width: 375px;
   padding: 25px;
   height: 100%;
-}
+} */
 
 section {
   max-height: 100%;
@@ -22,11 +21,11 @@ section {
   width: 100%;
 }
 
-h2, h3, p {
+/* h2, h3, p {
   text-align: center;
-}
+} */
 
-h2 {
+/* h2 {
   font-family: 'Lexend Giga', sans-serif;
   font-size: 1.875rem;
 }
@@ -35,14 +34,14 @@ h3, p, li {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.125rem;
   font-weight: bold;
-}
+} */
 
 ul {
   list-style: none;
   display: inline-flex;
 }
 
-img {
+.quizImg{
   display: block;
   margin: 0 auto;
 }
@@ -57,9 +56,9 @@ a:active {
   color: #102C37;
 }
 
-section {
+/* section {
   width: 100%;
-}
+} */
 
 .correctAns {
   font-size: 4rem;
@@ -67,14 +66,14 @@ section {
   margin: 0;
 }
 
-.flex, .column, .row {
+/* .flex, .column, .row {
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
+} */
 
-.row {
+/* .row {
   flex-direction: row;
 }
 
@@ -85,7 +84,7 @@ section {
   margin-left: 20px;
   margin-right: 20px;
   width: 170px;
-}
+} */
 
 /* STYLE STARTS */
 
@@ -94,12 +93,13 @@ section {
 }
 
 .qHead {
-  width: 80%;
-  margin-bottom: 60px;
+  /* width: 80%; */
+  /* margin-bottom: 60px; */
+  margin: 0 50px 60px 50px;
 }
 
 .qHeadW {
-  width: 65%;
+  /* width: 65%; */
 }
 
 .q_img {
@@ -109,18 +109,20 @@ section {
 }
 
 .options {
-  min-width: 80%;
-  max-width: 80%;
+  /* min-width: 80%;
+  max-width: 80%; */
   padding: none;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
+  justify-content: center;
+  margin: 0 40px 150px 40px;
 }
 
 .options ul {
   width: 100%;
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding: 0;
 }
 
@@ -162,6 +164,12 @@ section {
   margin-bottom: 68px;
 }
 
+#sad1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
 .click_me {
   width: 180px;  
   margin: 0 auto;
@@ -178,7 +186,7 @@ section {
 #wrongAns1 {
   position: absolute;
   top: 0; left: 0;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 .decompQues {
@@ -190,12 +198,13 @@ section {
   margin-top: 50px;
   position: absolute;
   top: 0; left: 0;
-  background-color: lightblue;
+  /* background-color: lightblue; */
 }
 
 #correctAns1, #correctAns2 {
   position: absolute;
   bottom: 60px; 
+  margin: 0 40px 0 40px;
 }
 
 
