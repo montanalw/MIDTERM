@@ -18,7 +18,7 @@ window.onload = function() {
           $("#correctAns1").hide()
           $("#wrongAns1").show()
           li[3].style.backgroundColor = "#fff"   
-          quizPanel1.style.display = "none";   //irenes js 
+          quizPanel1.style.visibility = "hidden";   //irenes js 
         }
       } 
       else{
@@ -26,7 +26,7 @@ window.onload = function() {
           $("#correctAns1").show()
           $("#wrongAns1").hide()
           li[3].style.backgroundColor = "#D7F040"   
-          quizPanel1.style.display = "block";   //irenes js
+          quizPanel1.style.visibility = "visible";   //irenes js 
         }
       }
     }
@@ -58,7 +58,7 @@ window.onload = function() {
     let girl = document.querySelector("#sad1")
     girl.onclick = function() {      
       $("#wrongAns1").hide()  
-      quizPanel1.style.display = "block";   //irenes js   
+      quizPanel1.style.visibility = "visible";   //irenes js   
     }
   }
 
