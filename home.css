@@ -1,54 +1,13 @@
-html {
-    background-color: black;
-}
-
-#main {
-    background-color: white;
-     min-width: 375px;
-    max-width: 375px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    box-sizing: border-box;
-    padding: 16px;
-}
-
-h1 {
-    font-family: 'Lexend Giga', sans-serif;
-    text-align: center;
-    font-weight: 400;
-}
-
-p {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
  /* this is for the very first page! */
 
 #frontpage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     align-content: center;
-    text-align: center;
 }
 
 #logoimg {
-    padding-top: 10%;
-    padding-bottom: 20%;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
 
 .slogan {
@@ -58,7 +17,7 @@ p {
 }
 
 #scrollarrows {
-    padding-top: 40%;
+    padding-top: 50px;
 }
 
 
@@ -68,7 +27,6 @@ p {
 
 
 #description {
-    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -80,14 +38,9 @@ p {
 }
 
 #box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    background-color: aquamarine;
+    background-color: white;
     border-radius: 10%;
-    margin-top: 10%;
+    margin-top: 50px;
     z-index: 1;
 }
 
@@ -100,26 +53,29 @@ p {
 
 
 #pile {
-    position: absolute;
-    right: 40%;
-    top: 144%;
+    /* position: absolute; */
+    position: relative;
+    top: -50px;
+    /* right: 40%; */
+    /* top: 144%; */
 }
 
 /* this is the awful start of attempting to get this aligned properly lol */
 
 
 #thread {
-    padding-top: 75%;
+    padding-top: 85px;
     align-items: flex-end;
 }
 
 
 #unwind {
     font-weight: 600;
+    text-align: right;
 }
 
 #redarrow {
-    transform: translate(50px, 10px);
+    transform: translate(140px, -10px);
 }
 
 /* this section is about clothing waste */
@@ -127,33 +83,19 @@ p {
 #clothing-waste {
     margin-top: 20%;
 }
-#sub-heading {
-    font-weight: 600;
-}
 
 /* this is the garbage truck area*/
 #garbage {
-    margin-bottom: 10%;
-}
-#garbage-info {
-    text-align:right;
+    margin: 30px 0 30px 0;
 }
 
 #clothing-info {
-    color: #50514F;
-    font-weight: 1500;
-    font-size: 30px;
-    text-align: right;
-    margin-bottom: 1%;
-}
-
-#clothing-small-info {
+    font-weight: 900;
+    font-size: 24px;
     text-align: right;
 }
 
 #percent {
-    font-family: 'Montserrat', sans-serif;
-    color: #50514F;
     font-size: 48px;
     margin: 0;
     font-weight: bolder;
@@ -161,10 +103,10 @@ p {
 
 /* this is the repurposed and recycled area*/
 
-.r-n-r {
+.slightBold {
     font-weight: 600;
 }
 
 #or-text {
-    flex-direction: column;
+    margin: 50px 35px 0 35px;
 }
