@@ -1,0 +1,170 @@
+html {
+    background-color: black;
+}
+
+#main {
+    background-color: white;
+     min-width: 375px;
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 16px;
+}
+
+h1 {
+    font-family: 'Lexend Giga', sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+
+p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+ /* this is for the very first page! */
+
+#frontpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+#logoimg {
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+.slogan {
+    font-weight: 100;
+    font-size: 150%;
+    color: #50514F;
+}
+
+#scrollarrows {
+    padding-top: 40%;
+}
+
+
+ /* end of first page */
+
+ /* here starts the decription of fast fashion */
+
+
+#description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#whatisit {
+    padding-top: 30%;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aquamarine;
+    border-radius: 10%;
+    margin-top: 10%;
+    z-index: 1;
+}
+
+#details {
+    padding: 10%;
+    color: #50514F;
+}
+
+/* this is the clothing in behind the description box */ 
+
+
+#pile {
+    position: absolute;
+    right: 40%;
+    top: 144%;
+}
+
+/* this is the awful start of attempting to get this aligned properly lol */
+
+
+#thread {
+    padding-top: 75%;
+    align-items: flex-end;
+}
+
+
+#unwind {
+    font-weight: 600;
+}
+
+#redarrow {
+    transform: translate(50px, 10px);
+}
+
+/* this section is about clothing waste */
+
+#clothing-waste {
+    margin-top: 20%;
+}
+#sub-heading {
+    font-weight: 600;
+}
+
+/* this is the garbage truck area*/
+#garbage {
+    margin-bottom: 10%;
+}
+#garbage-info {
+    text-align:right;
+}
+
+#clothing-info {
+    color: #50514F;
+    font-weight: 1500;
+    font-size: 30px;
+    text-align: right;
+    margin-bottom: 1%;
+}
+
+#clothing-small-info {
+    text-align: right;
+}
+
+#percent {
+    font-family: 'Montserrat', sans-serif;
+    color: #50514F;
+    font-size: 48px;
+    margin: 0;
+    font-weight: bolder;
+}
+
+/* this is the repurposed and recycled area*/
+
+.r-n-r {
+    font-weight: 600;
+}
+
+#or-text {
+    flex-direction: column;
+}
