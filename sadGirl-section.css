@@ -1,0 +1,33 @@
+/* sad girl section (clickable) */
+.hidden {
+    visibility: hidden;
+}
+#text1 {
+    text-align: left;
+    left: 10px;
+    top: 10px;
+}
+#text2 {
+    left: 30px;
+    top: 175px;
+}
+#text3 {
+    text-align: right;
+    right: 0;
+    top: 50px;
+}
+#sadGirlSection {
+    position: relative;
+}
+#sadGirlSection > div > p {
+    position: absolute;
+    color: #951F1E;
+}
+.thinkBubble {
+    position: absolute;
+    top: 0;
+}
+.sadGirl {
+    display: block;
+    margin: 0 auto;
+}
