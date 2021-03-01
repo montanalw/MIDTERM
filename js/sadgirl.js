@@ -1,5 +1,5 @@
-function thinkingClicked()
-{
+// function thinkingClicked()
+// {
     let thinking = document.getElementById("thinking")
     let appear = document.getElementById("hide")
     
@@ -8,5 +8,5 @@ function thinkingClicked()
             thinking.style.display = "none";
             appear.style.visibility = "visible";
     }
-}
-window.onload = thinkingClicked
+// }
+// window.onload = thinkingClicked
