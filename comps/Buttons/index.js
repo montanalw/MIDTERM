@@ -18,8 +18,8 @@ function ButtonUI(mbottom="8%", mright="8%", text="20L", function1='ButtonUI.Han
 }
 
 ButtonUI.HandleClickWrong1 = (el) => {
-  $("#correctAns1").hide()
-  $("#wrongAns1").show()
+  document.querySelector("#correctAns1").style.display = "none" 
+  document.querySelector("#wrongAns1").style.display = "block"
   let li = document.querySelector("#water_options").children
   for(let i=0; i<li.length; i++) {
     li[i].style.backgroundColor = "#fff"
@@ -27,14 +27,14 @@ ButtonUI.HandleClickWrong1 = (el) => {
 }
 
 ButtonUI.HandleClickRight1 = (el) => {
-  $("#correctAns1").show()
-  $("#wrongAns1").hide()
+  document.querySelector("#correctAns1").style.display = "block" 
+  document.querySelector("#wrongAns1").style.display = "none" 
   el.style.backgroundColor = "#D7F040"
 }
 
 ButtonUI.HandleClickWrong2 = (el) => {
-  $("#correctAns2").hide()
-  $("#wrongAns2").show()
+  document.querySelector("#correctAns2").style.display = "none" 
+  document.querySelector("#wrongAns2").style.display = "block" 
 
   let li = document.querySelector("#decom_options").children
   for(let i=0; i<li.length; i++) {
@@ -43,8 +43,8 @@ ButtonUI.HandleClickWrong2 = (el) => {
 }
 
 ButtonUI.HandleClickRight2 = (el) => {
-  $("#correctAns2").show()
-  $("#wrongAns2").hide()
+  document.querySelector("#correctAns2").style.display = "block" 
+  document.querySelector("#wrongAns2").style.display = "none"
   el.style.backgroundColor = "#D7F040"
 }
 

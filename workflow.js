@@ -9,4 +9,4 @@ document.querySelector("#decom_options").innerHTML += ButtonUI("0", "8%", "~200 
 document.querySelector("#decom_options").innerHTML += ButtonUI("0", "0", "~500 Years", 'ButtonUI.HandleClickWrong2(this)');
 
 document.querySelector("#wrongAns1").innerHTML += PopupUI();
-document.querySelector("#wrongAns2").innerHTML += PopupUI("sad2", 'PopupUI.HandleClickWrong2(this)');
+document.querySelector("#wrongAns2").innerHTML += PopupUI("155px", "sad2", 'PopupUI.HandleClickWrong2(this)');

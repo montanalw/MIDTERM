@@ -1,7 +1,8 @@
-function PopupUI(id="sad1", function2='PopupUI.HandleClickWrong1(this)') {
+function PopupUI(mtop="120px", id="sad1", function2='PopupUI.HandleClickWrong1(this)') {
   return `
     <h2 style='
-      margin-bottom: 68px;
+      margin-bottom: 68px; 
+      margin-top: ${mtop};
       text-align: center;
     '    
     >Oops!<br>Wrong Answer,<br>Please Try Again!</h2>
@@ -29,9 +30,9 @@ function PopupUI(id="sad1", function2='PopupUI.HandleClickWrong1(this)') {
 // export const Popup = PopupUI();
 
 PopupUI.HandleClickWrong1 = (el) => {
-  $("#wrongAns1").hide()  
+  document.querySelector("#wrongAns1").style.display = "none" 
 }
 
 PopupUI.HandleClickWrong2 = (el) => {
-  $("#wrongAns2").hide()  
+  document.querySelector("#wrongAns2").style.display = "none"  
 }
