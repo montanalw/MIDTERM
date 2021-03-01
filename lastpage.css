@@ -1,0 +1,119 @@
+html, body{
+    min-width: 375px;
+    max-width: 375px;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 16px;   
+    background-color: rgb(200, 230, 180);
+    position: relative;
+}
+
+h1, h2{
+    text-align: center;
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 400;
+}
+
+h3{
+    font-family:'Montserrat', sans-serif ;
+    font-weight: lighter;
+    font-size: 23px;
+}
+
+p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size:large
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    margin:35px 0px;
+}
+.item1{
+    text-align: right;
+}
+
+.item{
+    padding-left: 0px;
+    padding-right: 50px;
+    text-align: left;
+}
+
+.boldText1{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.boldText2{
+    font-weight:bolder;
+    font-size:21px;
+}
+
+.world{
+    margin-bottom: 140px;
+    position: relative;
+}
+
+.globeImage{
+    position: relative;
+    z-index: 2;
+    animation: rotation 15s infinite linear;
+}
+
+.arrowImage{
+    position: relative;
+    top: 260px;
+    z-index: 1;
+}
+
+#lightbulb{
+    width: 90px;
+}
+
+.icon{
+    width: 60px;
+}
+
+#reVamp{
+   margin-right: 130px;
+}
+
+.spacing{
+    margin-top: 80px;
+    margin-bottom: -20px;
+}
+.spacing2{
+    margin-top: 80px;
+    margin-bottom: -175px;
+}
+.spacing3{
+    margin-top: 130px;
+    margin-bottom: 40px;
+}
+.spacing4{
+    margin-bottom: 50px;
+}
+.spacing5{
+    margin-bottom: 130px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
