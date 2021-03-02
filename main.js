@@ -1,9 +1,9 @@
 window.onload = function() {
 
-  $("#wrongAns1").hide()
-  $("#correctAns1").hide()
-  $("#wrongAns2").hide()
-  $("#correctAns2").hide()
+  document.querySelector("#wrongAns1").hide()
+  document.querySelector("#correctAns1").hide()
+  document.querySelector("#wrongAns2").hide()
+  document.querySelector("#correctAns2").hide()
 
 }
 
