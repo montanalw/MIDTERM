@@ -1,0 +1,164 @@
+/* FONT */
+body, html {
+  margin: 0; padding: 0;
+  justify-content: center;
+  /* background-color: black; */
+}
+
+.main {
+  box-sizing: border-box;
+  background-color: lightblue;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 375px;
+  max-width: 375px;
+  padding: 25px;
+  height: 100%;
+}
+
+section {
+  max-height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+
+h2, h3, p {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 1.875rem;
+}
+
+h3, p, li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+
+a:active {
+  color: #102C37;
+}
+
+.correctAns {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.flex, .column, .row {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row > p {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 170px;
+}
+
+.off {
+  display: none;
+}
+
+/* STYLE STARTS */
+
+.question {
+  margin-top: 100px;
+}
+
+.qHead {
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+.qHeadW {
+  width: 65%;
+}
+
+.q_img {
+  min-width: 80%; 
+  min-height: 203px;
+  margin-bottom: 60px;
+}
+
+.options {
+  min-width: 80%;
+  max-width: 80%;
+  padding: none;
+  margin-bottom: 150px;
+}
+
+.options ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* INDIVIDUAL STYLE */
+.waterQues, .decompQues {
+  position: relative;
+  top: 0; left: 0;
+}
+
+#wrongAns1, #wrongAns2 {
+  position: absolute;
+  top: 0; left: 0;
+  background-color: lightblue;
+}
+
+#wrongAns1 > h2 {
+  font-weight: 300;
+}
+
+
+#wrongAns2 > h2 {
+  font-weight: 300;
+}
+
+#correctAns1, #correctAns2 {
+  position: absolute;
+  bottom: 60px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
