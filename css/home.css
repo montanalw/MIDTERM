@@ -6,6 +6,18 @@
     margin-bottom: 35%;
 }
 
+#gradient {
+    display: flex;
+    background-image: linear-gradient(#CCE6F4, #CCE6F4, #fcdb58);
+    min-width: 375px;
+    max-width: 375px;
+    padding: 25px;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
 #logoimg {
     padding-top: 30px;
     padding-bottom: 40px;
