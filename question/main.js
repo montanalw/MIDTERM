@@ -1,26 +1,26 @@
 window.onload = function() {
 
-  $("#wrongAns1").hide()
-  $("#correctAns1").hide()
-  $("#wrongAns2").hide()
-  $("#correctAns2").hide()
+  document.querySelector("#wrongAns1").style.display = "none"
+  document.querySelector("#correctAns1").style.display = "none"
+  document.querySelector("#wrongAns2").style.display = "none"
+  document.querySelector("#correctAns2").style.display = "none"
 
 
   function question1() {
-    let li = $("#water_options").children()
+    let li = document.querySelector("#water_options").children()
 
     for(i=0; i < li.length; i++){
       if(i<3){
         li[i].onclick = function() {
-          $("#correctAns1").hide()
-          $("#wrongAns1").show()
+          document.querySelector("#correctAns1").style.display = "none"
+          document.querySelector("#wrongAns1").style.display = "block"
           li[3].style.backgroundColor = "#fff"             
         }
       } 
       else{
         li[i].onclick = function() {
-          $("#correctAns1").show()
-          $("#wrongAns1").hide()
+          document.querySelector("#correctAns1").style.display = "block"
+          document.querySelector("#wrongAns1").style.display = "none"
           li[3].style.backgroundColor = "#D7F040"   
         }
       }
@@ -34,15 +34,15 @@ window.onload = function() {
 
       if(i<2 || i>2){
         li[i].onclick = function() {
-          $("#correctAns2").hide()
-          $("#wrongAns2").show()
+          document.querySelector("#correctAns2").style.display = "none"
+          document.querySelector("#wrongAns2").style.display = "block"
           li[2].style.backgroundColor = "#fff"             
         }
       }       
       else{
         li[i].onclick = function() {
-          $("#correctAns2").show()
-          $("#wrongAns2").hide()
+          document.querySelector("#correctAns2").style.display = "block"
+          document.querySelector("#wrongAns2").style.display = "none"
           li[2].style.backgroundColor = "#D7F040"   
         }
       } 
