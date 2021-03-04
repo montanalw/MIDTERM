@@ -1,5 +1,8 @@
-function makeVisible() {
-    var x = document.getElementById("big-div");
+//function makeVisible() {
+  let thread = document.getElementById("thread-click")
+    thread.onclick=function()
+    {
+    let x = document.getElementById("big-div")
     if (x.style.display === "none") {
       x.style.display = "block";
     }
@@ -8,15 +11,3 @@ function makeVisible() {
     }
 
   }
-
-  function bgCol() {
-    var bgCol = document.getElementById("frontpage");
-
-    if (bgCol.style.display === "block")
-    {
-      bgCol.style.backgroundImage = "linear-gradient(#CCE6F4, #CCE6F4, #fcdb58);"
-    }
-    
-  }
-
-  window.onload = bgCol

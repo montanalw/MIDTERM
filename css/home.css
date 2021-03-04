@@ -4,6 +4,7 @@
     align-items: center;
     align-content: center;
     margin-bottom: 35%;
+    position: relative;
 }
 
 #gradient {
@@ -16,6 +17,7 @@
     box-sizing: border-box;
     flex-direction: column;
     margin: 0 auto;
+    
 }
 
 #logoimg {
