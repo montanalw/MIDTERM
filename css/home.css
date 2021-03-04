@@ -3,6 +3,21 @@
 #frontpage {
     align-items: center;
     align-content: center;
+    margin-bottom: 35%;
+    position: relative;
+}
+
+#gradient {
+    display: flex;
+    background-image: linear-gradient(#CCE6F4, #CCE6F4, #fcdb58);
+    min-width: 375px;
+    max-width: 375px;
+    padding: 25px;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 0 auto;
+    
 }
 
 #logoimg {
@@ -16,9 +31,74 @@
     color: #50514F;
 }
 
-#scrollarrows {
-    padding-top: 50px;
+/* scroll down arrow animations */
+
+#container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
+
+.scrollarrow {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+
+  .scrollarrow:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .scrollarrow:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+
+  .scrollarrow:before,
+.scrollarrow:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #237CA1;
+}
+
+.scrollarrow:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .scrollarrow:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+
+  @keyframes move {
+      25% {
+          opacity: 1;
+      }
+      33% {
+        opacity: 1;
+        transform: translateY(30px);
+      }
+      67% {
+        opacity: 1;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+      }
+  }
+
+  #scroll-text {
+    margin-top: 20%;
+  }
 
 
  /* end of first page */
@@ -34,7 +114,7 @@
 }
 
 #whatisit {
-    padding-top: 30%;
+    margin-top: 50%;
 }
 
 #box {
@@ -77,6 +157,11 @@
 #redarrow {
     transform: translate(60px, -10px);
 }
+
+/* big-div hidden */
+#big-div {
+    display: none;
+} 
 
 /* this section is about clothing waste */
 

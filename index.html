@@ -32,13 +32,20 @@
 <!-- ====================================================================================
                 section a: starting page + beginning of clothing waste section
 ======================================================================================-->
+    <div id="gradient" class="flex flex-column">
         <div id="frontpage" class="flex flex-column">
             <img id="logoimg" src="images/a-images/recycle-logo.svg">
             <p class="slogan">THE IMPACT OF</p>
             <img src="images/a-images/fastfashion.svg">
             <p class="slogan">ON OUR ENVIRONMENT</p>
-            <img id="scrollarrows" src="images/a-images/scroll.svg">
-            <p>Scroll Down</p>
+        </div>
+        <div id="container">
+            <div class="scrollarrow"></div>
+            <div class="scrollarrow"></div>
+            <div class="scrollarrow"></div>
+        </div>
+        <div id="scroll-text">
+        <span>Scroll Down</span>
         </div>
 
 
@@ -61,7 +68,7 @@
             <img id="pile" src="images/a-images/pileofclothess.svg">
         </div>
         <div class="flex flex-row" id="thread">
-            <img src="images/a-images/thread roll.svg">
+            <img id="thread-click" src="images/a-images/thread roll.svg">
         <div id="unwindinfo">
             <p id="unwind">Click the thread to unwind information</p>
         </div>
@@ -69,11 +76,21 @@
     <div id="arrow">
         <img id="redarrow" src="images/a-images/red arrow.svg">
     </div>
+    </div>
+    <script src="js/thread.js"></script>
+
+
+      <!-- ====================================================================================
+                section b: main div, originally hidden
+        ======================================================================================-->
+
+    <div id="big-div">
         <div id="clothing-waste">
             <h1 class="headerMargin">clothing waste</h1>
             <p id="sub-heading">in North America,</p>
         </div>
 
+        
         <div id="garbage" class="flex flex-row">
                 <img src="images/a-images/clothing garbage illustration.svg">
                 <div class="flex-column">
@@ -89,7 +106,7 @@
         <div class="flex flex-row spacingMargin">
             <div class="flex flex-column">
                 <p class="slightBold">repurposed</p>
-                <img src="images/a-images/Repurpose icon.svg">
+                <img src="images/a-images/repurpose.svg">
             </div>
             <div id="or-text">
                 <p id="or">or</p>
@@ -302,4 +319,4 @@
             <h3 class="spacing5 bolded spacingMargin">Let's make the world a <br>better place!</h3>
         </div>
     </div>
-</body>
+
