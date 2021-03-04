@@ -1,57 +1,49 @@
 window.onload = function() {
 
-  $("#wrongAns1").hide()
-  $("#correctAns1").hide()
-  $("#wrongAns2").hide()
-  $("#correctAns2").hide()
-
-  // irene's js:
-  var quizPanel1 = document.getElementById("jeansQuestion")
-  var quizPanel2 = document.getElementById("decompQuestion")
+  document.querySelector("#wrongAns1").style.display = "none"
+  document.querySelector("#correctAns1").style.display = "none"
+  document.querySelector("#wrongAns2").style.display = "none"
+  document.querySelector("#correctAns2").style.display = "none"
 
 
   function question1() {
-    let li = $("#water_options").children()
+    let li = document.querySelector("#water_options").children
 
     for(i=0; i < li.length; i++){
       if(i<3){
         li[i].onclick = function() {
-          $("#correctAns1").hide()
-          $("#wrongAns1").show()
-          li[3].style.backgroundColor = "#fff"   
-          quizPanel1.style.visibility = "hidden";   //irenes js 
+          document.querySelector("#correctAns1").style.display = "none"
+          document.querySelector("#wrongAns1").style.display = "block"
+          li[3].style.backgroundColor = "#fff"             
         }
       } 
       else{
         li[i].onclick = function() {
-          $("#correctAns1").show()
-          $("#wrongAns1").hide()
+          document.querySelector("#correctAns1").style.display = "block"
+          document.querySelector("#wrongAns1").style.display = "none"
           li[3].style.backgroundColor = "#D7F040"   
-          quizPanel1.style.visibility = "visible";   //irenes js 
         }
       }
     }
   }
 
   function question2() {
-    let li = $("#decom_options").children()
+    let li = document.querySelector("#decom_options").children
 
     for(i=0; i < li.length; i++){
 
       if(i<2 || i>2){
         li[i].onclick = function() {
-          $("#correctAns2").hide()
-          $("#wrongAns2").show()
-          li[2].style.backgroundColor = "#fff"   
-          quizPanel2.style.visibility = "hidden";   //irenes js           
+          document.querySelector("#correctAns2").style.display = "none"
+          document.querySelector("#wrongAns2").style.display = "block"
+          li[2].style.backgroundColor = "#fff"             
         }
       }       
       else{
         li[i].onclick = function() {
-          $("#correctAns2").show()
-          $("#wrongAns2").hide()
-          li[2].style.backgroundColor = "#D7F040"  
-          quizPanel2.style.visibility = "visible";   //irenes js  
+          document.querySelector("#correctAns2").style.display = "block"
+          document.querySelector("#wrongAns2").style.display = "none"
+          li[2].style.backgroundColor = "#D7F040"   
         }
       } 
     }
@@ -60,16 +52,14 @@ window.onload = function() {
   function wrongAns1() {
     let girl = document.querySelector("#sad1")
     girl.onclick = function() {      
-      $("#wrongAns1").hide()  
-      quizPanel1.style.visibility = "visible";   //irenes js   
+      document.querySelector("#wrongAns1").style.display = "none"
     }
   }
 
   function wrongAns2() {    
     let girl = document.querySelector("#sad2")
     girl.onclick = function() { 
-      $("#wrongAns2").hide()
-      quizPanel2.style.visibility = "visible";   //irenes js 
+      document.querySelector("#wrongAns2").style.display = "none"
     }
   }
 
@@ -79,4 +69,3 @@ window.onload = function() {
   wrongAns2() 
 
 }
-
