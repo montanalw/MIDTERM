@@ -7,18 +7,6 @@
     position: relative;
 }
 
-#gradient {
-    display: flex;
-    background-image: linear-gradient(#CCE6F4, #CCE6F4, #fcdb58);
-    min-width: 375px;
-    max-width: 375px;
-    padding: 25px;
-    justify-content: center;
-    box-sizing: border-box;
-    flex-direction: column;
-    margin: 0 auto;
-    
-}
 
 #logoimg {
     padding-top: 30px;
@@ -30,6 +18,14 @@
     font-size: 150%;
     color: #50514F;
 }
+
+
+/* #thread-string {
+    position: absolute;
+    left: -10px;
+    z-index: -1;
+} */
+
 
 /* scroll down arrow animations */
 
@@ -161,12 +157,13 @@
 /* big-div hidden */
 #big-div {
     display: none;
+    z-index: 4;
 } 
 
 /* this section is about clothing waste */
 
 #clothing-waste {
-    margin: 0 40px 0 40px;
+    margin: 150px 40px 0 40px;
 }
 
 /* this is the garbage truck area*/
@@ -194,4 +191,8 @@
 
 #or-text {
     margin: 50px 35px 0 35px;
+}
+
+#recycleImg {
+    margin-top: 10px;
 }

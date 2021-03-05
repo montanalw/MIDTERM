@@ -23,14 +23,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    
-    
     </head>
 </html>
 <body class="flex">
     <div class="main flex flex-column">
 <!-- ====================================================================================
-                section a: starting page + beginning of clothing waste section
+                section a-1: starting page + beginning of clothing waste section
 ======================================================================================-->
     <div id="gradient" class="flex flex-column">
         <div id="frontpage" class="flex flex-column">
@@ -39,15 +37,17 @@
             <img src="images/a-images/fastfashion.svg">
             <p class="slogan">ON OUR ENVIRONMENT</p>
         </div>
+
+        <!-- scroll down animation -->
         <div id="container">
             <div class="scrollarrow"></div>
             <div class="scrollarrow"></div>
             <div class="scrollarrow"></div>
         </div>
         <div id="scroll-text">
-        <span>Scroll Down</span>
+            <span>Scroll Down</span>
         </div>
-
+        <!-- end of scroll down animation -->
 
         <img id="whatisit" src="images/a-images/what is it 2.svg">
         <div id="description" class="flex">
@@ -67,29 +67,32 @@
             </div>
             <img id="pile" src="images/a-images/pileofclothess.svg">
         </div>
+
         <div class="flex flex-row" id="thread">
             <img id="thread-click" src="images/a-images/thread roll.svg">
-        <div id="unwindinfo">
-            <p id="unwind">Click the thread to unwind information</p>
+            <div id="unwindinfo">
+                <p id="unwind">Click the thread to unwind information</p>
+            </div>
         </div>
-    </div>
-    <div id="arrow">
-        <img id="redarrow" src="images/a-images/red arrow.svg">
-    </div>
+        
+        <div id="arrow">
+            <img id="redarrow" src="images/a-images/red arrow.svg">
+        </div>
     </div>
     <script src="js/thread.js"></script>
 
 
-      <!-- ====================================================================================
-                section b: main div, originally hidden
-        ======================================================================================-->
+<!-- ====================================================================================
+        section a-2: main div, originally hidden
+======================================================================================-->
 
     <div id="big-div">
+        <!-- <div> -->
+            <!-- <img id="thread-string" src="images/a-images/threadIllustration.svg"> -->
         <div id="clothing-waste">
             <h1 class="headerMargin">clothing waste</h1>
             <p id="sub-heading">in North America,</p>
         </div>
-
         
         <div id="garbage" class="flex flex-row">
                 <img src="images/a-images/clothing garbage illustration.svg">
@@ -106,14 +109,14 @@
         <div class="flex flex-row spacingMargin">
             <div class="flex flex-column">
                 <p class="slightBold">repurposed</p>
-                <img src="images/a-images/repurpose.svg">
+                <img src="images/a-images/Repurpose icon.svg">
             </div>
             <div id="or-text">
                 <p id="or">or</p>
             </div>
             <div class="flex flex-column">
                 <p class="slightBold">recycled</p>
-                <img src="images/a-images/recycle (1) 2.svg">
+                <img id="recycleImg" src="images/a-images/recycle.svg">
             </div>
         </div>
 
@@ -271,7 +274,7 @@
         =====================================================================================-->
         <img src="images/g-images/tshirt-dupes.svg">
         <p class="boldText1">UP TO 200 YEARS</p>
-        <p>It takes up to 200 years to break down one piece of
+        <p>It takes up to <b>200 years</b> to break down <b>one piece</b> of
         synthetic clothing</p>
 
         <div class="flex-row flex spacingMargin">
@@ -282,13 +285,13 @@
         
         <div class="flex-row flex spacingMargin">
             <p class="item">As for cotton clothing, it takes a few months if 
-                placed in the right compost.</p>
+                placed in <b>the right compost.</b></p>
             <img src="images/g-images/reycle-truck.svg">
         </div>
 
-        <p class="boldText2">This could impact our <br>health if one were to <br>
+        <p><b>This could impact our <br>health if one were to <br>
             breathe/consume a lot of <br> microfibers and toxins in <br>
-        their lifetime.</p>
+        their lifetime.</b></p>
         <h1 class="headerMargin">how to reduce <br>environmental <br>impact</h1>
 
         <div class="world flex flex-column">
@@ -318,5 +321,12 @@
             <img id="reVamp" src="images/g-images/revamp-girl.svg">
             <h3 class="spacing5 bolded spacingMargin">Let's make the world a <br>better place!</h3>
         </div>
+        <!-- </div> -->
     </div>
+    
+    
+    
+</div>
+
+</body>
 
