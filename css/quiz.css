@@ -185,7 +185,7 @@ a:active {
 }
 
 #wrongAns1 {
-  margin-top: 100px;
+  margin-top: 0px;
   position: absolute;
   top: 0; left: 0;
   /* background-color: lightblue; */
@@ -198,7 +198,7 @@ a:active {
 }
 
 #wrongAns2 {
-  margin-top: 140px;
+  margin-top: 20px;
   position: absolute;
   top: 0; left: 0;
   /* background-color: lightblue; */

@@ -23,7 +23,6 @@ body {
         #CCE6F4, #fcdb58, #A6C48A, 
         #CCE6F4)
 }
-
 #gradient {
     position: relative;
     left: -25px;
@@ -35,7 +34,16 @@ body {
     box-sizing: border-box;
     flex-direction: column;
     margin: 0 auto;
-    
+}
+#big-div {
+    display: none;
+    z-index: 4;
+} 
+#quiz1-div {
+    visibility: hidden;
+}
+#quiz2-div {
+    visibility: hidden;
 }
 /* ====================================================
     flex stuff

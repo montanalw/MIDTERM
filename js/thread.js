@@ -10,8 +10,9 @@
       x.style.display = "block";
       thread.src = "images/a-images/thread illustration.svg";
       thread.style.position = "absolute";
-      thread.style.top = "1699px";
+      thread.style.top = "1695px";
       thread.style.left = "-6px";
+      // thread.style.left = "25px";
       description.style.visibility = "hidden";
       arrow.style.visibility = "hidden";   
 
